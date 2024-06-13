@@ -1,5 +1,5 @@
 import pandas as pd
-#test
+
 # Charger le fichier CSV
 df = pd.read_csv("test.csv", sep=';')
 
