@@ -16,7 +16,7 @@ for _, row in df.iterrows():
         icon=DivIcon(
             icon_size=(100,24),  # Taille de l'icône plus petite
             icon_anchor=(50,12),  # Ancrage de l'icône au centre
-            html=f'<div style="font-size: 8pt; border: 1px solid black; background-color: white; padding: 2px;"><b>{row["Commune"]}:</b> {row["nombre_habitants"]} faits</div>'
+            html=f'<div style="font-size: 8pt; border: 1px solid black; background-color: white; padding: 2px;"><b>{row["Commune"]}:</b> {row["somme_faits"]} faits</div>'
         )
     ).add_to(m)
 
