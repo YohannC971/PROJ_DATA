@@ -3,7 +3,7 @@ import pandas as pd
 # Charger le fichier CSV
 df = pd.read_csv("test.csv", sep=';')
 
-# Supprimer les colonnes "baab" et "jkhuh"
+# Supprimer les colonnes 
 df.drop(columns=["complementinfoval", "complementinfotaux"], inplace=True)
 
 # Enregistrer le DataFrame modifié dans un nouveau fichier CSV
