@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_70e8dd30f4506ec4e2f046e8b2b774c9 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    
+            <div class="folium-map" id="map_70e8dd30f4506ec4e2f046e8b2b774c9" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_70e8dd30f4506ec4e2f046e8b2b774c9 = L.map(
+                "map_70e8dd30f4506ec4e2f046e8b2b774c9",
+                {
+                    center: [16.25, -61.55],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 10,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_78ede112e467eed32b9ce94132e746aa = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors", "detectRetina": false, "maxNativeZoom": 19, "maxZoom": 19, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            );
+        
+    
+            tile_layer_78ede112e467eed32b9ce94132e746aa.addTo(map_70e8dd30f4506ec4e2f046e8b2b774c9);
+        
+    
+            var marker_49aab1ac4296ec93a894eb86ebb1c5b9 = L.marker(
+                [16.271869940513, -61.50405395704028],
+                {}
+            ).addTo(map_70e8dd30f4506ec4e2f046e8b2b774c9);
+        
+    
+            var div_icon_380a7132642b9e02b0cbef66fb55ddd1 = L.divIcon({"className": "empty", "html": "\n                    \u003cdiv class=\"card\" style=\"width: 8rem;\"\u003e\n                        \u003cdiv class=\"card-body p-2\"\u003e\n                            \u003ch6 class=\"card-title m-0\"\u003e\u003cb\u003eLes Abymes\u003c/b\u003e\u003c/h6\u003e\n                            \u003cp class=\"card-text m-0\" style=\"font-size: 8pt;\"\u003e3076 faits\u003c/p\u003e\n                        \u003c/div\u003e\n                    \u003c/div\u003e\n                ", "iconAnchor": [75, 15], "iconSize": [150, 30]});
+            marker_49aab1ac4296ec93a894eb86ebb1c5b9.setIcon(div_icon_380a7132642b9e02b0cbef66fb55ddd1);
+        
+    
+            var marker_e6324424350f975e7dc0cbf0e6b5da0b = L.marker(
+                [16.47176872814221, -61.512177025530825],
+                {}
+            ).addTo(map_70e8dd30f4506ec4e2f046e8b2b774c9);
+        
+    
+            var div_icon_5a7df7e565e28a34c518f195065551b1 = L.divIcon({"className": "empty", "html": "\n                    \u003cdiv class=\"card\" style=\"width: 8rem;\"\u003e\n                        \u003cdiv class=\"card-body p-2\"\u003e\n                            \u003ch6 class=\"card-title m-0\"\u003e\u003cb\u003eAnse-Bertrand\u003c/b\u003e\u003c/h6\u003e\n                            \u003cp class=\"card-text m-0\" style=\"font-size: 8pt;\"\u003e89 faits\u003c/p\u003e\n                        \u003c/div\u003e\n                    \u003c/div\u003e\n                ", "iconAnchor": [75, 15], "iconSize": [150, 30]});
+            marker_e6324424350f975e7dc0cbf0e6b5da0b.setIcon(div_icon_5a7df7e565e28a34c518f195065551b1);
+        
+    
+            var marker_00ce2d770940fb92511064824443ec99 = L.marker(
+                [16.26757061299841, -61.58772562929389],
+                {}
+            ).addTo(map_70e8dd30f4506ec4e2f046e8b2b774c9);
+        
+    
+            var div_icon_295d3a0f7616fcc15620290bfbdc7966 = L.divIcon({"className": "empty", "html": "\n                    \u003cdiv class=\"card\" style=\"width: 8rem;\"\u003e\n                        \u003cdiv class=\"card-body p-2\"\u003e\n                            \u003ch6 class=\"card-title m-0\"\u003e\u003cb\u003eBaie-Mahault\u003c/b\u003e\u003c/h6\u003e\n                            \u003cp class=\"card-text m-0\" style=\"font-size: 8pt;\"\u003e1343 faits\u003c/p\u003e\n                        \u003c/div\u003e\n                    \u003c/div\u003e\n                ", "iconAnchor": [75, 15], "iconSize": [150, 30]});
+            marker_00ce2d770940fb92511064824443ec99.setIcon(div_icon_295d3a0f7616fcc15620290bfbdc7966);
+        
+    
+            var marker_92021ee26935a7b08c24f7a4c2e882ef = L.marker(
+                [16.021552571385556, -61.74857233373351],
+                {}
+            ).addTo(map_70e8dd30f4506ec4e2f046e8b2b774c9);
+        
+    
+            var div_icon_5d78539de28a65a75bacfe8951180139 = L.divIcon({"className": "empty", "html": "\n                    \u003cdiv class=\"card\" style=\"width: 8rem;\"\u003e\n                        \u003cdiv class=\"card-body p-2\"\u003e\n                            \u003ch6 class=\"card-title m-0\"\u003e\u003cb\u003eBaillif\u003c/b\u003e\u003c/h6\u003e\n                            \u003cp class=\"card-text m-0\" style=\"font-size: 8pt;\"\u003e171 faits\u003c/p\u003e\n                        \u003c/div\u003e\n                    \u003c/div\u003e\n                ", "iconAnchor": [75, 15], "iconSize": [150, 30]});
+            marker_92021ee26935a7b08c24f7a4c2e882ef.setIcon(div_icon_5d78539de28a65a75bacfe8951180139);
+        
+    
+            var marker_e205b2c67d9ff3c963334e163a5c3d5d = L.marker(
+                [15.995811895965929, -61.73003290574951],
+                {}
+            ).addTo(map_70e8dd30f4506ec4e2f046e8b2b774c9);
+        
+    
+            var div_icon_beb5d636c4849b3f72f3160f57b282ec = L.divIcon({"className": "empty", "html": "\n                    \u003cdiv class=\"card\" style=\"width: 8rem;\"\u003e\n                        \u003cdiv class=\"card-body p-2\"\u003e\n                            \u003ch6 class=\"card-title m-0\"\u003e\u003cb\u003eBasse-Terre\u003c/b\u003e\u003c/h6\u003e\n                            \u003cp class=\"card-text m-0\" style=\"font-size: 8pt;\"\u003e885 faits\u003c/p\u003e\n                        \u003c/div\u003e\n                    \u003c/div\u003e\n                ", "iconAnchor": [75, 15], "iconSize": [150, 30]});
+            marker_e205b2c67d9ff3c963334e163a5c3d5d.setIcon(div_icon_beb5d636c4849b3f72f3160f57b282ec);
+        
+    
+            var marker_d49a1fbd55a6c60c8475708e8aa383dc = L.marker(
+                [16.132397463315524, -61.76917169786399],
+                {}
+            ).addTo(map_70e8dd30f4506ec4e2f046e8b2b774c9);
+        
+    
+            var div_icon_fba37fa358633485c02437b345206857 = L.divIcon({"className": "empty", "html": "\n                    \u003cdiv class=\"card\" style=\"width: 8rem;\"\u003e\n                        \u003cdiv class=\"card-body p-2\"\u003e\n                            \u003ch6 class=\"card-title m-0\"\u003e\u003cb\u003eBouillante\u003c/b\u003e\u003c/h6\u003e\n                            \u003cp class=\"card-text m-0\" style=\"font-size: 8pt;\"\u003e234 faits\u003c/p\u003e\n                        \u003c/div\u003e\n                    \u003c/div\u003e\n                ", "iconAnchor": [75, 15], "iconSize": [150, 30]});
+            marker_d49a1fbd55a6c60c8475708e8aa383dc.setIcon(div_icon_fba37fa358633485c02437b345206857);
+        
+    
+            var marker_a3917dd8d53fd1c59ec2f9b1d7e72d88 = L.marker(
+                [16.042010739651644, -61.55150508042235],
+                {}
+            ).addTo(map_70e8dd30f4506ec4e2f046e8b2b774c9);
+        
+    
+            var div_icon_b7432e358522f1376d3bbc26b222249e = L.divIcon({"className": "empty", "html": "\n                    \u003cdiv class=\"card\" style=\"width: 8rem;\"\u003e\n                        \u003cdiv class=\"card-body p-2\"\u003e\n                            \u003ch6 class=\"card-title m-0\"\u003e\u003cb\u003eCapesterre-Belle-Eau\u003c/b\u003e\u003c/h6\u003e\n                            \u003cp class=\"card-text m-0\" style=\"font-size: 8pt;\"\u003e742 faits\u003c/p\u003e\n                        \u003c/div\u003e\n                    \u003c/div\u003e\n                ", "iconAnchor": [75, 15], "iconSize": [150, 30]});
+            marker_a3917dd8d53fd1c59ec2f9b1d7e72d88.setIcon(div_icon_b7432e358522f1376d3bbc26b222249e);
+        
+    
+            var marker_0b8644f5e9cc7cc04dc4ea972db23ab9 = L.marker(
+                [15.89003788264396, -61.20478924450224],
+                {}
+            ).addTo(map_70e8dd30f4506ec4e2f046e8b2b774c9);
+        
+    
+            var div_icon_7dcb99c50f5b9452d9296ead4953709b = L.divIcon({"className": "empty", "html": "\n                    \u003cdiv class=\"card\" style=\"width: 8rem;\"\u003e\n                        \u003cdiv class=\"card-body p-2\"\u003e\n                            \u003ch6 class=\"card-title m-0\"\u003e\u003cb\u003eCapesterre-de-Marie-Galante\u003c/b\u003e\u003c/h6\u003e\n                            \u003cp class=\"card-text m-0\" style=\"font-size: 8pt;\"\u003e40 faits\u003c/p\u003e\n                        \u003c/div\u003e\n                    \u003c/div\u003e\n                ", "iconAnchor": [75, 15], "iconSize": [150, 30]});
+            marker_0b8644f5e9cc7cc04dc4ea972db23ab9.setIcon(div_icon_7dcb99c50f5b9452d9296ead4953709b);
+        
+    
+            var marker_b517da1b1fb0ee47835469c49e109600 = L.marker(
+                [15.994768728579096, -61.69453333297752],
+                {}
+            ).addTo(map_70e8dd30f4506ec4e2f046e8b2b774c9);
+        
+    
+            var div_icon_9e3779f4b07ea70dd978adec9dd82a64 = L.divIcon({"className": "empty", "html": "\n                    \u003cdiv class=\"card\" style=\"width: 8rem;\"\u003e\n                        \u003cdiv class=\"card-body p-2\"\u003e\n                            \u003ch6 class=\"card-title m-0\"\u003e\u003cb\u003eGourbeyre\u003c/b\u003e\u003c/h6\u003e\n                            \u003cp class=\"card-text m-0\" style=\"font-size: 8pt;\"\u003e208 faits\u003c/p\u003e\n                        \u003c/div\u003e\n                    \u003c/div\u003e\n                ", "iconAnchor": [75, 15], "iconSize": [150, 30]});
+            marker_b517da1b1fb0ee47835469c49e109600.setIcon(div_icon_9e3779f4b07ea70dd978adec9dd82a64);
+        
+    
+            var marker_07d260fd7b9018053c89aa390565e92a = L.marker(
+                [16.3030863577267, -61.082080554963],
+                {}
+            ).addTo(map_70e8dd30f4506ec4e2f046e8b2b774c9);
+        
+    
+            var div_icon_555deccdc37f7c51755c84d36cb493c5 = L.divIcon({"className": "empty", "html": "\n                    \u003cdiv class=\"card\" style=\"width: 8rem;\"\u003e\n                        \u003cdiv class=\"card-body p-2\"\u003e\n                            \u003ch6 class=\"card-title m-0\"\u003e\u003cb\u003eLa D\u00e9sirade\u003c/b\u003e\u003c/h6\u003e\n                            \u003cp class=\"card-text m-0\" style=\"font-size: 8pt;\"\u003e14 faits\u003c/p\u003e\n                        \u003c/div\u003e\n                    \u003c/div\u003e\n                ", "iconAnchor": [75, 15], "iconSize": [150, 30]});
+            marker_07d260fd7b9018053c89aa390565e92a.setIcon(div_icon_555deccdc37f7c51755c84d36cb493c5);
+        
+    
+            var marker_45fb1df4d001c09e8f47c9d93391e346 = L.marker(
+                [16.30704052852916, -61.792071998436846],
+                {}
+            ).addTo(map_70e8dd30f4506ec4e2f046e8b2b774c9);
+        
+    
+            var div_icon_1702e6edac428105223f3a75c66ff89e = L.divIcon({"className": "empty", "html": "\n                    \u003cdiv class=\"card\" style=\"width: 8rem;\"\u003e\n                        \u003cdiv class=\"card-body p-2\"\u003e\n                            \u003ch6 class=\"card-title m-0\"\u003e\u003cb\u003eDeshaies\u003c/b\u003e\u003c/h6\u003e\n                            \u003cp class=\"card-text m-0\" style=\"font-size: 8pt;\"\u003e175 faits\u003c/p\u003e\n                        \u003c/div\u003e\n                    \u003c/div\u003e\n                ", "iconAnchor": [75, 15], "iconSize": [150, 30]});
+            marker_45fb1df4d001c09e8f47c9d93391e346.setIcon(div_icon_1702e6edac428105223f3a75c66ff89e);
+        
+    
+            var marker_56459efda94b2a8042ce3e5934016cf3 = L.marker(
+                [15.880192556196397, -61.32309312432812],
+                {}
+            ).addTo(map_70e8dd30f4506ec4e2f046e8b2b774c9);
+        
+    
+            var div_icon_1336aaf3171f047fe5c4d21573cc76de = L.divIcon({"className": "empty", "html": "\n                    \u003cdiv class=\"card\" style=\"width: 8rem;\"\u003e\n                        \u003cdiv class=\"card-body p-2\"\u003e\n                            \u003ch6 class=\"card-title m-0\"\u003e\u003cb\u003eGrand-Bourg\u003c/b\u003e\u003c/h6\u003e\n                            \u003cp class=\"card-text m-0\" style=\"font-size: 8pt;\"\u003e261 faits\u003c/p\u003e\n                        \u003c/div\u003e\n                    \u003c/div\u003e\n                ", "iconAnchor": [75, 15], "iconSize": [150, 30]});
+            marker_56459efda94b2a8042ce3e5934016cf3.setIcon(div_icon_1336aaf3171f047fe5c4d21573cc76de);
+        
+    
+            var marker_db5a9d4e036ff4064bb111143ae43213 = L.marker(
+                [16.20750292665376, -61.49406785014629],
+                {}
+            ).addTo(map_70e8dd30f4506ec4e2f046e8b2b774c9);
+        
+    
+            var div_icon_fa9d3767ab784daef91537658b853bdf = L.divIcon({"className": "empty", "html": "\n                    \u003cdiv class=\"card\" style=\"width: 8rem;\"\u003e\n                        \u003cdiv class=\"card-body p-2\"\u003e\n                            \u003ch6 class=\"card-title m-0\"\u003e\u003cb\u003eLe Gosier\u003c/b\u003e\u003c/h6\u003e\n                            \u003cp class=\"card-text m-0\" style=\"font-size: 8pt;\"\u003e1528 faits\u003c/p\u003e\n                        \u003c/div\u003e\n                    \u003c/div\u003e\n                ", "iconAnchor": [75, 15], "iconSize": [150, 30]});
+            marker_db5a9d4e036ff4064bb111143ae43213.setIcon(div_icon_fa9d3767ab784daef91537658b853bdf);
+        
+    
+            var marker_096c836687e4b5f8ed4efaf28e78c389 = L.marker(
+                [16.13100278477124, -61.57303208575252],
+                {}
+            ).addTo(map_70e8dd30f4506ec4e2f046e8b2b774c9);
+        
+    
+            var div_icon_00658c18b9262ddad0419caed705c8df = L.divIcon({"className": "empty", "html": "\n                    \u003cdiv class=\"card\" style=\"width: 8rem;\"\u003e\n                        \u003cdiv class=\"card-body p-2\"\u003e\n                            \u003ch6 class=\"card-title m-0\"\u003e\u003cb\u003eGoyave\u003c/b\u003e\u003c/h6\u003e\n                            \u003cp class=\"card-text m-0\" style=\"font-size: 8pt;\"\u003e321 faits\u003c/p\u003e\n                        \u003c/div\u003e\n                    \u003c/div\u003e\n                ", "iconAnchor": [75, 15], "iconSize": [150, 30]});
+            marker_096c836687e4b5f8ed4efaf28e78c389.setIcon(div_icon_00658c18b9262ddad0419caed705c8df);
+        
+    
+            var marker_ac8581c02b68639f0542f44c1be46a15 = L.marker(
+                [16.272109235333325, -61.63345689143621],
+                {}
+            ).addTo(map_70e8dd30f4506ec4e2f046e8b2b774c9);
+        
+    
+            var div_icon_dcb73dfd5f44d8322deacc81dceac113 = L.divIcon({"className": "empty", "html": "\n                    \u003cdiv class=\"card\" style=\"width: 8rem;\"\u003e\n                        \u003cdiv class=\"card-body p-2\"\u003e\n                            \u003ch6 class=\"card-title m-0\"\u003e\u003cb\u003eLamentin\u003c/b\u003e\u003c/h6\u003e\n                            \u003cp class=\"card-text m-0\" style=\"font-size: 8pt;\"\u003e604 faits\u003c/p\u003e\n                        \u003c/div\u003e\n                    \u003c/div\u003e\n                ", "iconAnchor": [75, 15], "iconSize": [150, 30]});
+            marker_ac8581c02b68639f0542f44c1be46a15.setIcon(div_icon_dcb73dfd5f44d8322deacc81dceac113);
+        
+    
+            var marker_24836e7c3ed7ef666c39e33f29343ad4 = L.marker(
+                [16.333692243904416, -61.452963812843855],
+                {}
+            ).addTo(map_70e8dd30f4506ec4e2f046e8b2b774c9);
+        
+    
+            var div_icon_919a2db6a2ea98f906e4a2f7d9e64318 = L.divIcon({"className": "empty", "html": "\n                    \u003cdiv class=\"card\" style=\"width: 8rem;\"\u003e\n                        \u003cdiv class=\"card-body p-2\"\u003e\n                            \u003ch6 class=\"card-title m-0\"\u003e\u003cb\u003eMorne-\u00e0-l\u0027Eau\u003c/b\u003e\u003c/h6\u003e\n                            \u003cp class=\"card-text m-0\" style=\"font-size: 8pt;\"\u003e735 faits\u003c/p\u003e\n                        \u003c/div\u003e\n                    \u003c/div\u003e\n                ", "iconAnchor": [75, 15], "iconSize": [150, 30]});
+            marker_24836e7c3ed7ef666c39e33f29343ad4.setIcon(div_icon_919a2db6a2ea98f906e4a2f7d9e64318);
+        
+    
+            var marker_8b108184d05008154ddae09215de6b99 = L.marker(
+                [16.33290863564931, -61.33619519870423],
+                {}
+            ).addTo(map_70e8dd30f4506ec4e2f046e8b2b774c9);
+        
+    
+            var div_icon_0d299cf203d4f357afd47c9b866c9a48 = L.divIcon({"className": "empty", "html": "\n                    \u003cdiv class=\"card\" style=\"width: 8rem;\"\u003e\n                        \u003cdiv class=\"card-body p-2\"\u003e\n                            \u003ch6 class=\"card-title m-0\"\u003e\u003cb\u003eLe Moule\u003c/b\u003e\u003c/h6\u003e\n                            \u003cp class=\"card-text m-0\" style=\"font-size: 8pt;\"\u003e1006 faits\u003c/p\u003e\n                        \u003c/div\u003e\n                    \u003c/div\u003e\n                ", "iconAnchor": [75, 15], "iconSize": [150, 30]});
+            marker_8b108184d05008154ddae09215de6b99.setIcon(div_icon_0d299cf203d4f357afd47c9b866c9a48);
+        
+    
+            var marker_f8f0679c0610221494374daae37a1d29 = L.marker(
+                [16.190239661344187, -61.58769681913216],
+                {}
+            ).addTo(map_70e8dd30f4506ec4e2f046e8b2b774c9);
+        
+    
+            var div_icon_ff5c2c96c0d3fae624274186ca3e4af1 = L.divIcon({"className": "empty", "html": "\n                    \u003cdiv class=\"card\" style=\"width: 8rem;\"\u003e\n                        \u003cdiv class=\"card-body p-2\"\u003e\n                            \u003ch6 class=\"card-title m-0\"\u003e\u003cb\u003ePetit-Bourg\u003c/b\u003e\u003c/h6\u003e\n                            \u003cp class=\"card-text m-0\" style=\"font-size: 8pt;\"\u003e804 faits\u003c/p\u003e\n                        \u003c/div\u003e\n                    \u003c/div\u003e\n                ", "iconAnchor": [75, 15], "iconSize": [150, 30]});
+            marker_f8f0679c0610221494374daae37a1d29.setIcon(div_icon_ff5c2c96c0d3fae624274186ca3e4af1);
+        
+    
+            var marker_7b3e0f27afc002df131ca355d1d52e53 = L.marker(
+                [16.38226985324929, -61.49052573989271],
+                {}
+            ).addTo(map_70e8dd30f4506ec4e2f046e8b2b774c9);
+        
+    
+            var div_icon_78acbf90d5b4277533e10dacf4bab5a8 = L.divIcon({"className": "empty", "html": "\n                    \u003cdiv class=\"card\" style=\"width: 8rem;\"\u003e\n                        \u003cdiv class=\"card-body p-2\"\u003e\n                            \u003ch6 class=\"card-title m-0\"\u003e\u003cb\u003ePetit-Canal\u003c/b\u003e\u003c/h6\u003e\n                            \u003cp class=\"card-text m-0\" style=\"font-size: 8pt;\"\u003e289 faits\u003c/p\u003e\n                        \u003c/div\u003e\n                    \u003c/div\u003e\n                ", "iconAnchor": [75, 15], "iconSize": [150, 30]});
+            marker_7b3e0f27afc002df131ca355d1d52e53.setIcon(div_icon_78acbf90d5b4277533e10dacf4bab5a8);
+        
+    
+            var marker_e7db690e911236e5316dd3749d52f0ad = L.marker(
+                [16.236500839381687, -61.54156097260366],
+                {}
+            ).addTo(map_70e8dd30f4506ec4e2f046e8b2b774c9);
+        
+    
+            var div_icon_666687e0a66b4e3a24bd2647faf1097a = L.divIcon({"className": "empty", "html": "\n                    \u003cdiv class=\"card\" style=\"width: 8rem;\"\u003e\n                        \u003cdiv class=\"card-body p-2\"\u003e\n                            \u003ch6 class=\"card-title m-0\"\u003e\u003cb\u003ePointe-\u00e0-Pitre\u003c/b\u003e\u003c/h6\u003e\n                            \u003cp class=\"card-text m-0\" style=\"font-size: 8pt;\"\u003e1738 faits\u003c/p\u003e\n                        \u003c/div\u003e\n                    \u003c/div\u003e\n                ", "iconAnchor": [75, 15], "iconSize": [150, 30]});
+            marker_e7db690e911236e5316dd3749d52f0ad.setIcon(div_icon_666687e0a66b4e3a24bd2647faf1097a);
+        
+    
+            var marker_ce7767ef1608e7dacba84553434485b4 = L.marker(
+                [16.232188815731714, -61.79224603159757],
+                {}
+            ).addTo(map_70e8dd30f4506ec4e2f046e8b2b774c9);
+        
+    
+            var div_icon_19c0eed586fcaacca14571de8ebb3262 = L.divIcon({"className": "empty", "html": "\n                    \u003cdiv class=\"card\" style=\"width: 8rem;\"\u003e\n                        \u003cdiv class=\"card-body p-2\"\u003e\n                            \u003ch6 class=\"card-title m-0\"\u003e\u003cb\u003ePointe-Noire\u003c/b\u003e\u003c/h6\u003e\n                            \u003cp class=\"card-text m-0\" style=\"font-size: 8pt;\"\u003e293 faits\u003c/p\u003e\n                        \u003c/div\u003e\n                    \u003c/div\u003e\n                ", "iconAnchor": [75, 15], "iconSize": [150, 30]});
+            marker_ce7767ef1608e7dacba84553434485b4.setIcon(div_icon_19c0eed586fcaacca14571de8ebb3262);
+        
+    
+            var marker_5f70c2d2f13e98f064c94875b97631aa = L.marker(
+                [16.415562030916092, -61.532987050418505],
+                {}
+            ).addTo(map_70e8dd30f4506ec4e2f046e8b2b774c9);
+        
+    
+            var div_icon_80889c9d827be9fb5321bc0773a9decf = L.divIcon({"className": "empty", "html": "\n                    \u003cdiv class=\"card\" style=\"width: 8rem;\"\u003e\n                        \u003cdiv class=\"card-body p-2\"\u003e\n                            \u003ch6 class=\"card-title m-0\"\u003e\u003cb\u003ePort-Louis\u003c/b\u003e\u003c/h6\u003e\n                            \u003cp class=\"card-text m-0\" style=\"font-size: 8pt;\"\u003e283 faits\u003c/p\u003e\n                        \u003c/div\u003e\n                    \u003c/div\u003e\n                ", "iconAnchor": [75, 15], "iconSize": [150, 30]});
+            marker_5f70c2d2f13e98f064c94875b97631aa.setIcon(div_icon_80889c9d827be9fb5321bc0773a9decf);
+        
+    
+            var marker_8b822104dffed3ea9f16a55734be0a02 = L.marker(
+                [16.024316156158317, -61.70650683547222],
+                {}
+            ).addTo(map_70e8dd30f4506ec4e2f046e8b2b774c9);
+        
+    
+            var div_icon_fa358f1f8dbe791eff9324ed7ec8da2b = L.divIcon({"className": "empty", "html": "\n                    \u003cdiv class=\"card\" style=\"width: 8rem;\"\u003e\n                        \u003cdiv class=\"card-body p-2\"\u003e\n                            \u003ch6 class=\"card-title m-0\"\u003e\u003cb\u003eSaint-Claude\u003c/b\u003e\u003c/h6\u003e\n                            \u003cp class=\"card-text m-0\" style=\"font-size: 8pt;\"\u003e236 faits\u003c/p\u003e\n                        \u003c/div\u003e\n                    \u003c/div\u003e\n                ", "iconAnchor": [75, 15], "iconSize": [150, 30]});
+            marker_8b822104dffed3ea9f16a55734be0a02.setIcon(div_icon_fa358f1f8dbe791eff9324ed7ec8da2b);
+        
+    
+            var marker_e18f055d48cf9e581dfb8487e6659122 = L.marker(
+                [16.251788160997876, -61.28271027965795],
+                {}
+            ).addTo(map_70e8dd30f4506ec4e2f046e8b2b774c9);
+        
+    
+            var div_icon_fc2cffc77d41164031b0cec19a59e3e9 = L.divIcon({"className": "empty", "html": "\n                    \u003cdiv class=\"card\" style=\"width: 8rem;\"\u003e\n                        \u003cdiv class=\"card-body p-2\"\u003e\n                            \u003ch6 class=\"card-title m-0\"\u003e\u003cb\u003eSaint-Fran\u00e7ois\u003c/b\u003e\u003c/h6\u003e\n                            \u003cp class=\"card-text m-0\" style=\"font-size: 8pt;\"\u003e840 faits\u003c/p\u003e\n                        \u003c/div\u003e\n                    \u003c/div\u003e\n                ", "iconAnchor": [75, 15], "iconSize": [150, 30]});
+            marker_e18f055d48cf9e581dfb8487e6659122.setIcon(div_icon_fc2cffc77d41164031b0cec19a59e3e9);
+        
+    
+            var marker_08ca4a540ef7d07109876529563c8d8c = L.marker(
+                [15.95602376574285, -61.31782251060586],
+                {}
+            ).addTo(map_70e8dd30f4506ec4e2f046e8b2b774c9);
+        
+    
+            var div_icon_555ff74c997c92ae71fdbead45c655ae = L.divIcon({"className": "empty", "html": "\n                    \u003cdiv class=\"card\" style=\"width: 8rem;\"\u003e\n                        \u003cdiv class=\"card-body p-2\"\u003e\n                            \u003ch6 class=\"card-title m-0\"\u003e\u003cb\u003eSaint-Louis\u003c/b\u003e\u003c/h6\u003e\n                            \u003cp class=\"card-text m-0\" style=\"font-size: 8pt;\"\u003e57 faits\u003c/p\u003e\n                        \u003c/div\u003e\n                    \u003c/div\u003e\n                ", "iconAnchor": [75, 15], "iconSize": [150, 30]});
+            marker_08ca4a540ef7d07109876529563c8d8c.setIcon(div_icon_555ff74c997c92ae71fdbead45c655ae);
+        
+    
+            var marker_fdff7a0e8df45b7d2bdf0bd42f404e25 = L.marker(
+                [16.225916611640898, -61.3798813530701],
+                {}
+            ).addTo(map_70e8dd30f4506ec4e2f046e8b2b774c9);
+        
+    
+            var div_icon_78305218ca28916bf3e952ad66f791e1 = L.divIcon({"className": "empty", "html": "\n                    \u003cdiv class=\"card\" style=\"width: 8rem;\"\u003e\n                        \u003cdiv class=\"card-body p-2\"\u003e\n                            \u003ch6 class=\"card-title m-0\"\u003e\u003cb\u003eSainte-Anne\u003c/b\u003e\u003c/h6\u003e\n                            \u003cp class=\"card-text m-0\" style=\"font-size: 8pt;\"\u003e882 faits\u003c/p\u003e\n                        \u003c/div\u003e\n                    \u003c/div\u003e\n                ", "iconAnchor": [75, 15], "iconSize": [150, 30]});
+            marker_fdff7a0e8df45b7d2bdf0bd42f404e25.setIcon(div_icon_78305218ca28916bf3e952ad66f791e1);
+        
+    
+            var marker_68d7d2f2a610a258cffd7b7f2f1c526d = L.marker(
+                [16.33094959822856, -61.69262525390383],
+                {}
+            ).addTo(map_70e8dd30f4506ec4e2f046e8b2b774c9);
+        
+    
+            var div_icon_139c9b170d21823da7e1302cf036d820 = L.divIcon({"className": "empty", "html": "\n                    \u003cdiv class=\"card\" style=\"width: 8rem;\"\u003e\n                        \u003cdiv class=\"card-body p-2\"\u003e\n                            \u003ch6 class=\"card-title m-0\"\u003e\u003cb\u003eSainte-Rose\u003c/b\u003e\u003c/h6\u003e\n                            \u003cp class=\"card-text m-0\" style=\"font-size: 8pt;\"\u003e562 faits\u003c/p\u003e\n                        \u003c/div\u003e\n                    \u003c/div\u003e\n                ", "iconAnchor": [75, 15], "iconSize": [150, 30]});
+            marker_68d7d2f2a610a258cffd7b7f2f1c526d.setIcon(div_icon_139c9b170d21823da7e1302cf036d820);
+        
+    
+            var marker_5278f6721d12b4e9fbfa29249a3244fa = L.marker(
+                [15.846079132703377, -61.63383266700549],
+                {}
+            ).addTo(map_70e8dd30f4506ec4e2f046e8b2b774c9);
+        
+    
+            var div_icon_abcf77e4350e3a989a4b66914d7ab707 = L.divIcon({"className": "empty", "html": "\n                    \u003cdiv class=\"card\" style=\"width: 8rem;\"\u003e\n                        \u003cdiv class=\"card-body p-2\"\u003e\n                            \u003ch6 class=\"card-title m-0\"\u003e\u003cb\u003eTerre-de-Bas\u003c/b\u003e\u003c/h6\u003e\n                            \u003cp class=\"card-text m-0\" style=\"font-size: 8pt;\"\u003e0 faits\u003c/p\u003e\n                        \u003c/div\u003e\n                    \u003c/div\u003e\n                ", "iconAnchor": [75, 15], "iconSize": [150, 30]});
+            marker_5278f6721d12b4e9fbfa29249a3244fa.setIcon(div_icon_abcf77e4350e3a989a4b66914d7ab707);
+        
+    
+            var marker_6397f59b185e936146891cc1b11201d1 = L.marker(
+                [15.8617891857386, -61.56850757169693],
+                {}
+            ).addTo(map_70e8dd30f4506ec4e2f046e8b2b774c9);
+        
+    
+            var div_icon_6891cb98cc3e23d9ddffd56b6c245cfd = L.divIcon({"className": "empty", "html": "\n                    \u003cdiv class=\"card\" style=\"width: 8rem;\"\u003e\n                        \u003cdiv class=\"card-body p-2\"\u003e\n                            \u003ch6 class=\"card-title m-0\"\u003e\u003cb\u003eTerre-de-Haut\u003c/b\u003e\u003c/h6\u003e\n                            \u003cp class=\"card-text m-0\" style=\"font-size: 8pt;\"\u003e33 faits\u003c/p\u003e\n                        \u003c/div\u003e\n                    \u003c/div\u003e\n                ", "iconAnchor": [75, 15], "iconSize": [150, 30]});
+            marker_6397f59b185e936146891cc1b11201d1.setIcon(div_icon_6891cb98cc3e23d9ddffd56b6c245cfd);
+        
+    
+            var marker_0d6e6ed68e11dc1929a423c80866f300 = L.marker(
+                [15.97408034360214, -61.64771425017479],
+                {}
+            ).addTo(map_70e8dd30f4506ec4e2f046e8b2b774c9);
+        
+    
+            var div_icon_069205d589b94280b9efb00f918594da = L.divIcon({"className": "empty", "html": "\n                    \u003cdiv class=\"card\" style=\"width: 8rem;\"\u003e\n                        \u003cdiv class=\"card-body p-2\"\u003e\n                            \u003ch6 class=\"card-title m-0\"\u003e\u003cb\u003eTrois-Rivi\u00e8res\u003c/b\u003e\u003c/h6\u003e\n                            \u003cp class=\"card-text m-0\" style=\"font-size: 8pt;\"\u003e175 faits\u003c/p\u003e\n                        \u003c/div\u003e\n                    \u003c/div\u003e\n                ", "iconAnchor": [75, 15], "iconSize": [150, 30]});
+            marker_0d6e6ed68e11dc1929a423c80866f300.setIcon(div_icon_069205d589b94280b9efb00f918594da);
+        
+    
+            var marker_da878f6200d3a4a719d1f3f333eec72c = L.marker(
+                [15.94738743758546, -61.70160745380435],
+                {}
+            ).addTo(map_70e8dd30f4506ec4e2f046e8b2b774c9);
+        
+    
+            var div_icon_638604d73fb42d363928728b5a920d32 = L.divIcon({"className": "empty", "html": "\n                    \u003cdiv class=\"card\" style=\"width: 8rem;\"\u003e\n                        \u003cdiv class=\"card-body p-2\"\u003e\n                            \u003ch6 class=\"card-title m-0\"\u003e\u003cb\u003eVieux-Fort\u003c/b\u003e\u003c/h6\u003e\n                            \u003cp class=\"card-text m-0\" style=\"font-size: 8pt;\"\u003e8 faits\u003c/p\u003e\n                        \u003c/div\u003e\n                    \u003c/div\u003e\n                ", "iconAnchor": [75, 15], "iconSize": [150, 30]});
+            marker_da878f6200d3a4a719d1f3f333eec72c.setIcon(div_icon_638604d73fb42d363928728b5a920d32);
+        
+    
+            var marker_2fb3f0a115c0ac3685007d73cac27a67 = L.marker(
+                [16.0580612391062, -61.76693255148228],
+                {}
+            ).addTo(map_70e8dd30f4506ec4e2f046e8b2b774c9);
+        
+    
+            var div_icon_49416aed00c638ce0eb97950d0f42696 = L.divIcon({"className": "empty", "html": "\n                    \u003cdiv class=\"card\" style=\"width: 8rem;\"\u003e\n                        \u003cdiv class=\"card-body p-2\"\u003e\n                            \u003ch6 class=\"card-title m-0\"\u003e\u003cb\u003eVieux-Habitants\u003c/b\u003e\u003c/h6\u003e\n                            \u003cp class=\"card-text m-0\" style=\"font-size: 8pt;\"\u003e129 faits\u003c/p\u003e\n                        \u003c/div\u003e\n                    \u003c/div\u003e\n                ", "iconAnchor": [75, 15], "iconSize": [150, 30]});
+            marker_2fb3f0a115c0ac3685007d73cac27a67.setIcon(div_icon_49416aed00c638ce0eb97950d0f42696);
+        
+</script>
+</html>
