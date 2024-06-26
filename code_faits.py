@@ -24,7 +24,7 @@ colors = plt.cm.tab20(np.linspace(0, 1, len(grouped_data['classe'].unique())))
 color_dict = {classe: color for classe, color in zip(grouped_data['classe'].unique(), colors)}
 
 # Augmenter la taille de la figure
-plt.figure(figsize=(16, 10))  # Ajuster la taille selon vos besoins
+plt.figure(figsize=(16, 10))
 
 # Visualiser le nombre de faits par classe avec des couleurs différentes
 for classe in grouped_data['classe'].unique():
@@ -34,18 +34,14 @@ for classe in grouped_data['classe'].unique():
 plt.xlabel('Année')
 plt.ylabel('Nombre de Faits')
 plt.title('Nombre de Faits par Classe et Année')
-
-# Déplacer la légende à l'extérieur du graphique
 plt.legend(loc='upper left', bbox_to_anchor=(1, 1))
-
 plt.grid(True)
-plt.tight_layout()  # Ajuster la disposition pour éviter le chevauchement
+plt.tight_layout()
 plt.savefig('nombre_de_faits_par_classe.png', format='png', bbox_inches='tight')
 plt.show()
 
-# Identifier les types de faits avec des augmentations significatives (par exemple, plus de 10 faits)
 significant_increase = grouped_data[grouped_data['faits'] > 10]
-significant_decrease = grouped_data[grouped_data['faits'] < -10]  # Note: vérifiez si cela a un sens dans votre contexte
+significant_decrease = grouped_data[grouped_data['faits'] < -10] 
 
 # Afficher les types de faits avec des augmentations significatives
 print("Augmentations significatives :")
